@@ -50,22 +50,19 @@ Ensure that you have the following libraries installed in your system:
 9. pvporcupine
     ```bash
             pip install pvporcupine==1.9.5
-10. Webbrowser
-    ```bash
-            pip install webbrowser
-11. pyautogui
+10. pyautogui
     ```bash
             pip install pyautogui
-12. subprocess
+11. subprocess
     ```bash
             pip install subprocess
-13. hugchat
+12. hugchat
     ```bash
             pip install hugchat
-14. opencv
+13. opencv
     ```bash
             pip install opencv-python
-15. opencv-contrib
+14. opencv-contrib
     ```bash
             pip install opencv-contrib-python
 
