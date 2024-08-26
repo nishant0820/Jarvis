@@ -28,11 +28,9 @@ $(document).ready(function (){
         sync: true,
         in:{
             effect: "bounceIn",
-            sync: true,
         },
         out:{
             effect: "bounceOut",
-            sync: true,
         },
     });
 

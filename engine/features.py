@@ -107,3 +107,10 @@ def chatBot(query):
     print(response)
     speak(response)
     return response
+
+# Android automation
+def makeCall(name, mobileNo):
+    mobileNo =mobileNo.replace(" ", "")
+    speak("Calling "+name)
+    command = 'adb shell am start -a android.intent.action.CALL -d tel:'+mobileNo
+    os.system(command)

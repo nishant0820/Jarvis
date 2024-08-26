@@ -40,15 +40,25 @@ def allCommands(message=1):
         eel.senderText(query)
     try:
         if "phone call" in query or "video call" in query:
-            from engine.features import findContact,whatsApp
-            flag=""
-            contact_no,name=findContact(query)
+            from engine.features import findContact, whatsApp, makeCall
+            contact_no, name = findContact(query)
             if(contact_no != 0):
-                if "phone call" in query:
-                    flag='call'
-                else:
-                    flag='video call'
-                whatsApp(contact_no,query,flag,name)
+                speak("Which mode you want to use whatsapp or mobile")
+                preferance = takeCommand()
+
+                if "mobile" in preferance:
+                    if "phone call" in query:
+                        makeCall(name, contact_no)
+                    else:
+                        speak("please try again")
+                elif "whatsapp" in preferance:
+                    message = ""    
+                    if "phone call" in query:
+                        message = 'call'
+                    else:
+                        message = 'video call'
+                                        
+                    whatsApp(contact_no, query, message, name)
         else:
             from engine.features import chatBot
             chatBot(query)
