@@ -97,4 +97,4 @@ Follow these steps:
 7. Add `contacts.csv` file to your project from google contacts.
 8. If you want to change the Frontend, so you can change in `index.html` and `style.css` file.
 
-## Author: Nishant Gupta
+## Author: Nishant Gupta, Satyam Gupta
